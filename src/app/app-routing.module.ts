@@ -15,6 +15,14 @@ const routes: Routes = [
     path: 'alert',
     loadChildren: () => import('./alert/alert.module').then( m => m.AlertPageModule)
   },
+  {
+    path: 'lista',
+    loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
+  },
+  {
+    path: 'item',
+    loadChildren: () => import('./item/item.module').then( m => m.ItemPageModule)
+  },
 ];
 
 @NgModule({
